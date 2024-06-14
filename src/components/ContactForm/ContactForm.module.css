@@ -1,0 +1,26 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+.fieldContainer{    
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.field{
+    width: 85%;
+    margin-top: 10px;
+}
+
+.btn{
+    width: 100px;
+    margin: 0 auto;
+}
+
+.error{
+    color: red;
+}

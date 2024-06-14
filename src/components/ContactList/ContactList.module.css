@@ -1,0 +1,22 @@
+
+
+.list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 40px;
+        width: 800px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 12px;
+    min-width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+
