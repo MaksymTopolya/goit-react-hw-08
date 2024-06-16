@@ -11,6 +11,7 @@ import {
 import storage from "redux-persist/lib/storage";
 import contactsReducer from './contacts/contactsSlice';
 import authReduser from './auth/slice'
+import persistStore from 'redux-persist/es/persistStore';
 
 
 const authPersistConfig = {
@@ -35,6 +36,8 @@ export const store = configureStore({
       },
     }),
 });
+
+export const persistor = persistStore(store);
 
 
 

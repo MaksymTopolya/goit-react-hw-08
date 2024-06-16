@@ -15,7 +15,7 @@ const slice = createSlice({
   },
   reducers: {
     changeFilter: (state, action) => {
-      state.filters.name = action.payload;
+      state.filters.name = action.payload 
     },
   },
   extraReducers: (builder) => {
@@ -53,7 +53,7 @@ const slice = createSlice({
       .addCase(deleteContact.fulfilled, (state, action) => {
         state.contacts.loading  = false;
         state.contacts.error = false;
-        state.contacts.items = state.contacts.items.filter(item => item.id !== action.payload.id);
+        state.contacts.items = state.contacts.items.filter(item => item.id !== action.payload.id) 
       })
       .addCase(deleteContact.rejected, (state) => {
         state.contacts.loading = false;
@@ -82,7 +82,8 @@ export const selectFilteredContacts = createSelector(
   [selectContacts, selectFilter],
   (contacts, textFilter) => {
     return contacts.filter(contact =>
-      contact.name.toLowerCase().includes(textFilter.toLowerCase())
+      contact.name.toLowerCase().includes(textFilter.toLowerCase()) ||
+      contact.number.toLowerCase().includes(textFilter.toLowerCase())
     );
   }
 );

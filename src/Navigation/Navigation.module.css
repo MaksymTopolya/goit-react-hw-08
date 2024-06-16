@@ -1,0 +1,53 @@
+/* Navigation.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+  }
+  
+  .active {
+    font-weight: bold;
+    color: #0056b3;
+  }
+  
+  .userInfo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 20px;
+  }
+  
+  .welcome {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .logoutBtn {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  logoutBtn:hover {
+    background-color: #c82333;
+  }
+  
