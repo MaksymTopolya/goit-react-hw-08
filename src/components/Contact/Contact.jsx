@@ -1,7 +1,7 @@
 
 import { HiUserCircle, HiPhone } from 'react-icons/hi';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from '../../redux/contacts/contactsOps';
+import { deleteContact } from '../../redux/contacts/operations';
 import toast, { Toaster } from 'react-hot-toast';
 
 export default function Contact({ data }) {
